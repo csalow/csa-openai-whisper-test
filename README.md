@@ -20,6 +20,10 @@ pip install openai
 
 pip install python-dotenv  # in case to read the api-key from .env
 
+# API access to OpenAI
+
+https://platform.openai.com/docs/overview
+
 # Audio Sample
 
 In directory "audio" - Urlaub-in-den-Bergen.mp3 which was recorded with ffmpeg, see "Record by ffmpeg to file".
