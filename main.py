@@ -13,7 +13,9 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 client = OpenAI(api_key=openai_api_key)
 
-audio_file= open("audio/Urlaub-in-den-Bergen.mp3", "rb")
+source_file = "/home/csalow/clouds/altii-rhea/projects/altii/interview/altii-int-BellevueAM-Uebergewicht-Lang/out/altii-int-BellevueAM-Uebergewicht-Lang_v1_00w.mp3"
+
+audio_file= open(source_file, "rb")
 transcript = client.audio.transcriptions.create(
   model="whisper-1", 
   file=audio_file
